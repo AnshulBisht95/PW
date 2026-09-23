@@ -1,0 +1,27 @@
+{
+  "validAdmin": {
+    "email": "admin@example.com",
+    "password": "Admin@123",
+    "role": "admin"
+  },
+  "validUser": {
+    "email": "user@example.com",
+    "password": "User@123",
+    "role": "user"
+  },
+  "invalidUser": {
+    "email": "wrong@example.com",
+    "password": "badpass",
+    "role": "guest"
+  },
+  "emptyEmail": {
+    "email": "",
+    "password": "pass123",
+    "role": "guest"
+  },
+  "emptyPassword": {
+    "email": "a@example.com",
+    "password": "",
+    "role": "guest"
+  }
+}
