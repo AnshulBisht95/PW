@@ -96,4 +96,5 @@ test("file upload  @sanity", async ({page})=>{
       await page.waitForTimeout(2000);
           await page.locator("#multipleFilesInput").setInputFiles([]);
       await page.waitForTimeout(2000);
+      await expect(page).toHaveURL("https://testautomationpractice.blogspot.com/");
 })
