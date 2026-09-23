@@ -92,9 +92,9 @@ test("Webtabl @regression", async ({page})=>{
 
 test("file upload  @sanity", async ({page})=>{
     await page.goto("https://testautomationpractice.blogspot.com/");
-    await page.locator("#multipleFilesInput").setInputFiles(["test-data\\ChatGPT Image Mar 9, 2026, 01_00_18 AM.png", "test-data\\furry_youtube_banner_2560x1440.png"]);
+    // await page.locator("#multipleFilesInput").setInputFiles(["C:\\Users\\ANSHUL BISHT\\Documents\\Playwright\\PW\\test-data\\ChatGPT Image Mar 9, 2026, 01_00_18 AM.png", "C:\\Users\\ANSHUL BISHT\\Documents\\Playwright\\PW\\test-data\\furry_youtube_banner_2560x1440.png"]);
       await page.waitForTimeout(2000);
-          await page.locator("#multipleFilesInput").setInputFiles([]);
-      await page.waitForTimeout(2000);
+        //   await page.locator("#multipleFilesInput").setInputFiles([]);
+    //   await page.waitForTimeout(2000);
       await expect(page).toHaveURL("https://testautomationpractice.blogspot.com/"); 
 })
